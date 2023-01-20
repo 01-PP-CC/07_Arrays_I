@@ -155,8 +155,12 @@ function getSentenceArr2(arr) {
 
     for (let i = 0; i < arr.length; i++) {
        
+        // wenn ich noch NICHT das letzte Element habe --> GAP
+        // wenn ich das letzte Element habe -->  PUNCT
+        // a = a + 1 || a += 1  
+
        // 2. Variante IF-ELSE
-        if (i != arr.length -1)
+        if (i !== arr.length -1)
          {
              str += arr[i] + GAP;
          } else {
@@ -166,8 +170,6 @@ function getSentenceArr2(arr) {
 
    return str;
 }
-
-
 
 
 
